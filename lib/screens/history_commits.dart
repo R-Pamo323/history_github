@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:history_github/models/item.dart';
 import 'package:history_github/services/request_commits.dart';
+import 'package:intl/intl.dart';
 
 class HistoryCommit extends StatefulWidget {
   final RequestCommits _request;
@@ -30,14 +31,19 @@ class _HistoryCommitState extends State<HistoryCommit> {
           }
           if (snapshot.hasData) {
             return ListView.builder(
+              //itemExtent: 80,
               itemCount: snapshot.data?.length,
               itemBuilder: (context, index) {
                 final item = snapshot.data?[index];
                 return ListTile(
-                    title: Text(
-                      "${item!.sha} ------- ${item!.commit.message}   --------  ${item!.commit.author.date} -------- ${item!.author.login}",
-                    ),
-                    subtitle: Image.network("${item!.author.avatarUrl}"));
+                  leading: Image.network("${item!.author.avatarUrl}"),
+                  title: Text(
+                    "${item.commit.message} ",
+                  ),
+                  subtitle: Text("${item.author.login}"),
+                  trailing: Text(
+                      '${DateFormat("yMMMd").add_Hm().format(item.commit.author.date)}'),
+                );
               },
             );
           }
