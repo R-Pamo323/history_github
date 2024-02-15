@@ -1,11 +1,15 @@
-class Item {
-  final String node_id;
+import 'package:history_github/models/commit.dart';
 
-  Item({required this.node_id});
+class Item {
+  final String sha;
+  final Commit commit;
+
+  Item({required this.sha, required this.commit});
 
   factory Item.fromJson(Map<String, dynamic> json) {
     return Item(
-      node_id: json["node_id"],
+      sha: json["sha"],
+      commit: Commit.fromJson(json["commit"]),
     );
   }
 }

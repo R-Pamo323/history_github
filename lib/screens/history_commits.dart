@@ -35,7 +35,7 @@ class _HistoryCommitState extends State<HistoryCommit> {
                 final item = snapshot.data?[index];
                 return ListTile(
                   title: Text(
-                    "${item!.node_id}",
+                    "${item!.sha} ------- ${item!.commit.message}",
                   ),
                 );
               },
