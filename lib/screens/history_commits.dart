@@ -34,10 +34,10 @@ class _HistoryCommitState extends State<HistoryCommit> {
               itemBuilder: (context, index) {
                 final item = snapshot.data?[index];
                 return ListTile(
-                  title: Text(
-                    "${item!.sha} ------- ${item!.commit.message}   --------  ${item!.commit.author.name} -------- ${item!.commit.author.date}",
-                  ),
-                );
+                    title: Text(
+                      "${item!.sha} ------- ${item!.commit.message}   --------  ${item!.commit.author.date} -------- ${item!.author.login}",
+                    ),
+                    subtitle: Image.network("${item!.author.avatarUrl}"));
               },
             );
           }
