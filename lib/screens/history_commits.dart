@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:history_github/helpers/my_colors.dart';
 import 'package:history_github/helpers/my_styles.dart';
 import 'package:history_github/models/item.dart';
 import 'package:history_github/services/request_commits.dart';
@@ -15,7 +16,7 @@ class HistoryCommit extends StatefulWidget {
 }
 
 class _HistoryCommitState extends State<HistoryCommit> {
-  late Future<List<Item>> futureItem; //* Se recibe la lista de Items
+  late Future<List<Item>> futureItem;
 
   @override
   void initState() {
@@ -24,10 +25,10 @@ class _HistoryCommitState extends State<HistoryCommit> {
         .getData(); //* Obtenemos los datos al iniciar la aplicación
   }
 
+  /// Volvemos a actualizar nuestro futureItem despues del Pull To Refresh
   Future refresh() async {
     setState(() {
-      futureItem = widget.request
-          .getData(); //* Volvemos a actualizar nuestro futureItem despues del Pull To Refresh
+      futureItem = widget.request.getData();
     });
   }
 
@@ -41,7 +42,7 @@ class _HistoryCommitState extends State<HistoryCommit> {
           style: MyStyles.poppinsAppBar,
         ),
         elevation: 0,
-        backgroundColor: Colors.transparent,
+        backgroundColor: MyColors.colorTransparent,
         centerTitle: true,
       ),
       body: FutureBuilder(

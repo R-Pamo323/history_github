@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ErrorData extends StatelessWidget {
-  const ErrorData();
+  const ErrorData({super.key});
 
   @override
   Widget build(BuildContext context) {

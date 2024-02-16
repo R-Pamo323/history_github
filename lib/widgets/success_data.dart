@@ -10,7 +10,7 @@ class SuccessData extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-      physics: const BouncingScrollPhysics(), //* Trabaja como lista de IOs
+      physics: const BouncingScrollPhysics(),
       itemCount: listdata?.length ?? 0,
       itemBuilder: (context, index) {
         final item = listdata?[index];

@@ -6,13 +6,14 @@ class MyStyles {
   static TextStyle poppinsGeneral = GoogleFonts.poppins(
     fontSize: 14,
     fontWeight: FontWeight.w600,
-    color: Colors.white,
+    color: MyColors.colorWhite,
   );
 
-  static TextStyle poppinsText = GoogleFonts.poppins(color: Colors.white);
+  static TextStyle poppinsText =
+      GoogleFonts.poppins(color: MyColors.colorWhite);
 
-  static TextStyle poppinsDate =
-      GoogleFonts.poppins(color: Colors.white, fontWeight: FontWeight.bold);
+  static TextStyle poppinsDate = GoogleFonts.poppins(
+      color: MyColors.colorWhite, fontWeight: FontWeight.bold);
 
   static TextStyle poppinsAppBar = GoogleFonts.poppins(
       color: MyColors.colorPrincipal,
