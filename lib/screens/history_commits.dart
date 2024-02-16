@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:history_github/helpers/my_styles.dart';
 import 'package:history_github/models/item.dart';
 import 'package:history_github/services/request_commits.dart';
 import 'package:history_github/widgets/error_data.dart';
 import 'package:history_github/widgets/success_data.dart';
-import 'package:intl/intl.dart';
+import 'package:lottie/lottie.dart';
 
 class HistoryCommit extends StatefulWidget {
-  final RequestCommits _request;
-  const HistoryCommit(this._request);
+  final RequestCommits request;
+  const HistoryCommit(this.request, {super.key});
 
   @override
   _HistoryCommitState createState() => _HistoryCommitState();
@@ -19,13 +20,13 @@ class _HistoryCommitState extends State<HistoryCommit> {
   @override
   void initState() {
     super.initState();
-    futureItem = widget._request
+    futureItem = widget.request
         .getData(); //* Obtenemos los datos al iniciar la aplicación
   }
 
   Future refresh() async {
     setState(() {
-      futureItem = widget._request
+      futureItem = widget.request
           .getData(); //* Volvemos a actualizar nuestro futureItem despues del Pull To Refresh
     });
   }
@@ -34,19 +35,28 @@ class _HistoryCommitState extends State<HistoryCommit> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("History GitHub"),
+        actions: [Lottie.asset('assets/images/robot.json')],
+        title: Text(
+          "History GitHub",
+          style: MyStyles.poppinsAppBar,
+        ),
+        elevation: 0,
+        backgroundColor: Colors.transparent,
+        centerTitle: true,
       ),
       body: FutureBuilder(
           future: futureItem,
           builder: (BuildContext context, AsyncSnapshot<List<Item>> snapshot) {
             if (snapshot.hasError) {
-              return ErrorData();
+              return const ErrorData();
             }
             if (snapshot.hasData) {
               return RefreshIndicator(
                   onRefresh: refresh, child: SuccessData(snapshot.data));
             }
-            return Center(child: CircularProgressIndicator());
+            return Center(
+              child: Lottie.asset('assets/images/loading.json'),
+            );
           }),
     );
   }

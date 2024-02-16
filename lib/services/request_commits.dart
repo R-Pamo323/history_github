@@ -10,7 +10,7 @@ class RequestCommits {
     final response = await http.get(Uri.parse(url));
 
     if (response.statusCode != 200) {
-      throw http.ClientException("Error in the data");
+      throw http.ClientException("Error in the connection");
     }
     return List<Item>.from(
         jsonDecode(response.body).map((x) => Item.fromJson(x)));

@@ -7,7 +7,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  final req = const RequestCommits(
+  final requestCommit = const RequestCommits(
       url: 'https://api.github.com/repos/R-Pamo323/history_github/commits');
 
   const MyApp({super.key});
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HistoryCommit(req),
+      home: HistoryCommit(requestCommit),
     );
   }
 }
