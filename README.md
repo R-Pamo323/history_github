@@ -8,7 +8,9 @@ El proyecto se realizó en Flutter con la versión: **3.13.9**
 
 # Instalación
 
-Primero deberá dirigirse a la siguiente carpeta de "Drive", para poder descargar la "APK" con el nombre "History_GitHub.apk": [History_GitHub_APK](https://drive.google.com/drive/folders/1c9GiY9qVaZZnB4ZlswPprighCK2IylS_)
+Primero deberá dirigirse a la siguiente carpeta de "Drive": [History_GitHub_APK](https://drive.google.com/drive/folders/1c9GiY9qVaZZnB4ZlswPprighCK2IylS_).
+Descargaremos el archivo con el nombre "History_GitHub.apk".
+[![image.png](https://i.postimg.cc/HxpdXyHX/image.png)](https://postimg.cc/KKs6y418)
 
 
 A few resources to get you started if this is your first Flutter project:
