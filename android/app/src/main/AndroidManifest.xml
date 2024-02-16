@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="history_github"
+        android:label="History GitHub"
         android:name="${applicationName}"
         android:icon="@mipmap/logo_history_github">
         <activity
