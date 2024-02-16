@@ -8,7 +8,7 @@ void main() {
 
 class MyApp extends StatelessWidget {
   final req = const RequestCommits(
-      url: 'https://api.github.com/repos/R-Pamo323/history_github/commits');
+      url: 'https://api.github.com/repos/R-Pamo323/history_github/commitsdd');
 
   const MyApp({super.key});
 
