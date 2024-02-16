@@ -32,17 +32,22 @@ class _HistoryCommitState extends State<HistoryCommit> {
 
   @override
   Widget build(BuildContext context) {
-    return FutureBuilder(
-        future: futureItem,
-        builder: (BuildContext context, AsyncSnapshot<List<Item>> snapshot) {
-          if (snapshot.hasError) {
-            return ErrorData();
-          }
-          if (snapshot.hasData) {
-            return RefreshIndicator(
-                onRefresh: refresh, child: SuccessData(snapshot.data));
-          }
-          return CircularProgressIndicator();
-        });
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("History GitHub"),
+      ),
+      body: FutureBuilder(
+          future: futureItem,
+          builder: (BuildContext context, AsyncSnapshot<List<Item>> snapshot) {
+            if (snapshot.hasError) {
+              return ErrorData();
+            }
+            if (snapshot.hasData) {
+              return RefreshIndicator(
+                  onRefresh: refresh, child: SuccessData(snapshot.data));
+            }
+            return Center(child: CircularProgressIndicator());
+          }),
+    );
   }
 }

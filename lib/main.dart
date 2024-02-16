@@ -15,12 +15,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(title: Text("History Commits Github")),
-        body: Center(
-          child: HistoryCommit(req),
-        ),
-      ),
+      debugShowCheckedModeBanner: false,
+      home: HistoryCommit(req),
     );
   }
 }
