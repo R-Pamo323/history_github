@@ -1,11 +1,15 @@
 # History GitHub
 
-El siguiente proyecto mostrará los "Commits" que se realizaron durante la creación del mismo. Donde podremos ver la foto del autor, el mensaje, el nombre del creador, la fecha de creación del Commit.
-Podremos apretar cada "Commit" donde nos mostrará más a detalle el mensaje y la fecha con la hora exacta en que se realizó el "Commit".
+El siguiente proyecto mostrará los "Commits" que se realizaron durante la creación del mismo. Donde podremos ver la foto del autor, el mensaje, el nombre del creador, la fecha de creación del "Commit".
+Podremos apretar cada "Commit" donde nos mostrará más a detalle el mensaje y la fecha con la hora exacta en que se realizó.
+Tambien si hacemos un Pull To Refresh(jalar hacia abajo la pantalla), se actualizará con los nuevos "Commits" que se generaron en ese momento.
 
-## Instalación
+El proyecto se realizó en Flutter con la versión: **3.13.9**
 
-This project is a starting point for a Flutter application.
+# Instalación
+
+Primero deberá dirigirse a la siguiente carpeta de "Drive", para poder descargar la "APK" con el nombre "History_GitHub.apk": [History_GitHub_APK](https://drive.google.com/drive/folders/1c9GiY9qVaZZnB4ZlswPprighCK2IylS_)
+
 
 A few resources to get you started if this is your first Flutter project:
 
