@@ -1,8 +1,9 @@
-# history_github
+# History GitHub
 
-A new Flutter project.
+El siguiente proyecto mostrará los "Commits" que se realizaron durante la creación del mismo. Donde podremos ver la foto del autor, el mensaje, el nombre del creador, la fecha de creación del Commit.
+Podremos apretar cada "Commit" donde nos mostrará más a detalle el mensaje y la fecha con la hora exacta en que se realizó el "Commit".
 
-## Getting Started
+## Instalación
 
 This project is a starting point for a Flutter application.
 
