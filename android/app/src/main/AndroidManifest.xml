@@ -2,7 +2,7 @@
     <application
         android:label="history_github"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/logo_history_github">
         <activity
             android:name=".MainActivity"
             android:exported="true"
