@@ -5,6 +5,14 @@ class ErrorData extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text("No data to show");
+    return Stack(
+      fit: StackFit.expand,
+      children: [
+        Image.asset(
+          "assets/images/1_No Connection.png",
+          fit: BoxFit.cover,
+        ),
+      ],
+    );
   }
 }
