@@ -2,7 +2,7 @@
 
 El siguiente proyecto mostrará los "Commits" que se realizaron durante la creación del mismo. Donde podremos ver la foto del autor, el mensaje, el nombre del creador y la fecha de creación del "Commit".
 Podremos apretar cada "Commit" donde nos mostrará más a detalle el mensaje y la fecha con la hora exacta en que se realizó.
-Tambien si hacemos un Pull To Refresh(jalar hacia abajo la pantalla), se actualizará con los nuevos "Commits" que se generaron en ese momento.
+Tambien si hacemos un Pull To Refresh (jalar hacia abajo la pantalla), se actualizará con los nuevos "Commits" que se generaron en ese momento.
 
 El proyecto se realizó en Flutter con la versión: **3.13.9**
 
