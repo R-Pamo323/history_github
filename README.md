@@ -17,6 +17,7 @@ Copiaremos el enlace para poder realizar el Git Clone del código en nuestro ord
 [![image.png](https://i.postimg.cc/MpwYV7X9/image.png)](https://postimg.cc/9rxTjqd9) 
 
 Abrimos nuestro editor de código de preferencia y debemos tener instalado la versión de Flutter: **3.13.9**, para que las dependencias se instalen de forma correcta.
+
 Por último en nuestro terminal, corremos el comando: **flutter pub get**
 
 # Instalación de APK
@@ -42,5 +43,8 @@ Después les aparecerá la última pantalla donde debemos de darle click en "Ins
 
 [![image.png](https://i.postimg.cc/65wHLfG8/image.png)](https://postimg.cc/BtYcJDp3)
 
-# Aplicación
+# Vista Previa
+
+Vista previa de como se ve la aplicación:
+
 https://github.com/R-Pamo323/history_github/assets/33794424/543fb036-56c6-486f-99e0-8d46b06afbe5
