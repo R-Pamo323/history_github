@@ -6,6 +6,19 @@ Tambien si hacemos un Pull To Refresh (jalar hacia abajo la pantalla), se actual
 
 El proyecto se realizó en Flutter con la versión: **3.13.9**
 
+# Pasos para ejecutar el proyecto
+
+Para ejecutar el proyecto en tu ordenador, haremos click en el boton "Code"
+
+[![image.png](https://i.postimg.cc/g0d3LmSQ/image.png)](https://postimg.cc/v4q4pFdt)
+
+Copiaremos el enlace para poder realizar el Git Clone del código en nuestro ordenador:
+
+[![image.png](https://i.postimg.cc/MpwYV7X9/image.png)](https://postimg.cc/9rxTjqd9) 
+
+Abrimos nuestro editor de código de preferencia y debemos tener instalado la versión de Flutter: **3.13.9**, para que las dependencias se instalen de forma correcta.
+Por último en nuestro terminal, corremos el comando: **flutter pub get**
+
 # Instalación de APK
 
 Primero en su celular deberá dirigirse a la siguiente carpeta de "Drive": [History_GitHub_APK](https://drive.google.com/drive/folders/1c9GiY9qVaZZnB4ZlswPprighCK2IylS_).
@@ -28,18 +41,6 @@ Una vez descargado abrimos el archivo "History_GitHub.apk" y nos aparecerá una 
 Después les aparecerá la última pantalla donde debemos de darle click en "Install" o "Instalar"
 
 [![image.png](https://i.postimg.cc/65wHLfG8/image.png)](https://postimg.cc/BtYcJDp3)
-
-# Pasos para ejecutar el proyecto
-
-Para ejecutar el proyecto en tu ordenador, haremos click en el boton "Code"
-
-[![image.png](https://i.postimg.cc/g0d3LmSQ/image.png)](https://postimg.cc/v4q4pFdt)
-
-Copiaremos el enlace para poder realizar el Git Clone del código en nuestro ordenador:
-
-[![image.png](https://i.postimg.cc/MpwYV7X9/image.png)](https://postimg.cc/9rxTjqd9) 
-
-Abrimos nuestro editor de código de preferencia y debemos tener instalado la versión de Flutter: **3.13.9**, para que las dependencias se instalen de forma correcta.
 
 # Aplicación
 https://github.com/R-Pamo323/history_github/assets/33794424/543fb036-56c6-486f-99e0-8d46b06afbe5
